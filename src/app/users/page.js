@@ -7,7 +7,7 @@ const getUsers = async () => {
     console.log(data)
 };
 
-export default  async function (){
+export default  async function GetUsers(){
     const data= await getUsers()
     // console.log(data)
     return(

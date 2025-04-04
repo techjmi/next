@@ -30,7 +30,7 @@ export default function AddproductPage() {
         category: "",
         company: "",
     })
-    console.log(data)
+    // console.log(data)
   };
 
   return (
@@ -64,14 +64,6 @@ export default function AddproductPage() {
             placeholder="Category"
             className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
-          {/* <input
-            type="text"
-            name="company"
-            value={formData.comapny}
-            onChange={handleChange}
-            placeholder="Enter Company"
-            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-          /> */}
             <input
             type="text"
             name="company"
