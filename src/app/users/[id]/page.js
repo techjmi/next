@@ -2,7 +2,7 @@ import Link from "next/link";
 
 // Function to get user data
 const getUsers = async (id) => {
-    const res = await fetch(`http://localhost:3001/api/users/${id}`, { cache: "no-store" });
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/users/${id}`, { cache: "no-store" });
     if (!res.ok) {
         throw new Error("Failed to fetch user");
     }

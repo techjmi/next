@@ -21,7 +21,7 @@ export default function EditProduct() {
 
   const fetchProductDetails = async () => {
     try {
-      let response = await fetch(`http://localhost:3000/api/products/${id}`, {
+      let response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/products/${id}`, {
         method: "GET",
         headers: { "Content-Type": "application/json" },
       });

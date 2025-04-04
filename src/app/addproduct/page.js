@@ -16,7 +16,7 @@ export default function AddproductPage() {
   const handleSubmit = async(e) => {
     e.preventDefault();
     // console.log("Products Data:", formData);
-    let response= await fetch('http://localhost:3000/api/products',{
+    let response= await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/products`,{
         method:"POST",
         headers: {
             "Content-Type": "application/json",  
