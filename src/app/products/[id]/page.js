@@ -21,7 +21,7 @@ export default function EditProduct() {
 
   const fetchProductDetails = async () => {
     try {
-      let response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/products/${id}`, {
+      let response = await fetch(`/api/products/${id}`, {
         method: "GET",
         headers: { "Content-Type": "application/json" },
       });
@@ -39,7 +39,7 @@ export default function EditProduct() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let response = await fetch(`http://localhost:3000/api/products/${id}`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/products/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

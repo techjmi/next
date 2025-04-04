@@ -15,7 +15,7 @@ export default function Page() {
     const handleSubmit = async(e) => {
         e.preventDefault();
         console.log("User Data:", formData);
-        let response= await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/users`,{
+        let response= await fetch(`/api/users`,{
             method:"POST",
             body:JSON.stringify(formData)
         })
