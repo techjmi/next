@@ -20,7 +20,7 @@ export default async function UserPage({ params }) {
 
     return (
         <div>
-            <h1>This is a user's detail page</h1>
+            <h1>This is a user detail page</h1>
             <h4>{data.name}</h4>
         </div>
     );
