@@ -1,15 +1,15 @@
 import Link from "next/link";
 
 const getUsers = async () => {
-    const res = await fetch(`/api/users`);
-    const data = await res.json();
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/users`);
+    const data = await res.json()
     return data;
     console.log(data)
 };
 
 export default  async function GetUsers(){
     const data= await getUsers()
-    // console.log(data)
+    console.log(data)
     return(
         <div>
             <h1>this is a users list page
