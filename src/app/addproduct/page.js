@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function () {
+export default function AddproductPage() {
   const [formData, setFormData] = useState({
     name: "",
     price: "",
